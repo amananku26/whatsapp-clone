@@ -1,10 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from './Components/Sidebar';
 
 function App() {
   return (
+    // BEM namin conventions
     <div className="app">
-      Whatsapp clone
+      <div className="app__body">
+        <Sidebar/>
+        {/* sidebar */}
+        {/* chats */}
+      </div>
     </div>
   );
 }
