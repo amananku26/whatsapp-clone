@@ -35,7 +35,6 @@ function Sidebar() {
         <SidebarChat addNewChat />
         <SidebarChat />
         <SidebarChat />
-        
       </div>
     </div>
   );
