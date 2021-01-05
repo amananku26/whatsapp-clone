@@ -4,6 +4,9 @@
     cursor: pointer;
     border-bottom: 1px solid #ececec;
 }
+.SidebarChat>h2{
+    align-items: center;
+}
 .SidebarChat:hover{
     background-color: #ebebeb;
 }
