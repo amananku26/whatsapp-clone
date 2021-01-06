@@ -8,9 +8,10 @@
     align-items: center;
 }
 .SidebarChat:hover{
-    background-color: #ebebeb;
+    background-color: #fffd9e;
 }
 .sidebarChat__info>h2{
+    text-decoration: none;
     font-size: 16px;
     margin-bottom: 8px;
 }
