@@ -13,13 +13,15 @@ function Chat() {
   const [input, setInput] = useState("");
   const [seed, setSeed] = useState("");
   const { roomId } = useParams();
+  // console.log("hello",roomId)
   const [roomName, setRoomName] = useState("");
   useEffect(() => {
     if (roomId) {
-      db.collection("rooms")
+     var pop =  db.collection("rooms")
         .doc(roomId)
         .onSnapshot((snapshot) => setRoomName(snapshot.data().name));
     }
+    // console.log(pop)
   }, [roomId]);
 
   const sendMessage = (e) => {
