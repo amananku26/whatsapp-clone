@@ -1,12 +1,12 @@
 .login{
     display: grid;
     place-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 .login > .login__panel> button {
     width: 300px;
     margin-top: 35px;
-    background-color: #2e81f4;
+    background-color: #07bc4c;
     color: #eff2f5;
     font-weight: 800;
 }
@@ -29,5 +29,5 @@ color: #2e81f4;
     border-radius: 15px;
 }
 .login__panel:hover{
-    background-color: #2e81f4;
+    background-color: #07bc4c;
 }

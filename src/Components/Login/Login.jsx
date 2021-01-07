@@ -20,8 +20,7 @@ function Login() {
         <div className="login">
             <div className="login__panel">
                 <div className="login__logo">
-                    <img src="https://cdn.iconscout.com/icon/free/png-512/facebook-logo-2019-1597680-1350125.png" alt="fblogo" />
-                    {/* <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="fbtext" /> */}
+                    <img src="https://i.pinimg.com/originals/a2/dc/5c/a2dc5c3a8c443f7bce721542c2a98a2f.png" alt="whatsapplogo" />
                 </div>
                 <Button type="submit" onClick={signin} >Sign In</Button>
             </div>

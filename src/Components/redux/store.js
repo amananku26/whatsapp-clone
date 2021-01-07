@@ -6,7 +6,7 @@ const rootReducer = combineReducers({ PostData:PostReducer});
 let composeEnhancers = compose;
 const logger = (store) => (next) => (action) => {
     const val = next(action);
-    console.log(store.getState());
+    // console.log(store.getState());
     return val;
 };
 if (process.env.NODE_ENV !== "production") {

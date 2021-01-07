@@ -8,7 +8,7 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import SidebarChat from "./SidebarChat";
 import db from "../firebase";
-
+import { useSelector, useDispatch } from "react-redux";
 function Sidebar() {
   const [rooms, setRooms] = useState([]);
   useEffect(() => {
@@ -21,11 +21,12 @@ function Sidebar() {
       unsubscribe();
     });
   }, []);
-  console.log(rooms);
+  // console.log(rooms);
+  var data = useSelector((state) => state.PostData.UserData);
   return (
     <div className="sidebar">
       <div className="sidebar__header">
-        <Avatar />
+        <Avatar src={data.data.photoURL} />
         <div className="sidebar__headerRight">
           <IconButton>
             <DonutLargeIcon />

@@ -3,18 +3,18 @@ import Chat from "./Components/Chat/Chat.jsx";
 import Sidebar from "./Components/Sidebar";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Login from "./Components/Login/Login";
-import { useSelector,useDispatch } from "react-redux"
+import { useSelector, useDispatch } from "react-redux";
 
 function App() {
-  var data = useSelector((state) => state.PostData.UserData)
-  const user = data
+  var data = useSelector((state) => state.PostData.UserData);
+  const user = data;
   return (
     // BEM namin conventions
     <div className="app">
-      <div className="app__body">
-        {!user ? (
-          <Login />
-        ) : (
+      {!user ? (
+        <Login />
+      ) : (
+        <div className="app__body">
           <BrowserRouter>
             {/* <Switch> */}
             <Sidebar />
@@ -27,11 +27,11 @@ function App() {
             </Route> */}
             {/* </Switch> */}
           </BrowserRouter>
-        )}
+        </div>
+      )}
 
-        {/* sidebar */}
-        {/* chats */}
-      </div>
+      {/* sidebar */}
+      {/* chats */}
     </div>
   );
 }
