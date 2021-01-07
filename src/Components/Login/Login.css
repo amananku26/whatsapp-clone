@@ -1,0 +1,33 @@
+.login{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.login > .login__panel> button {
+    width: 300px;
+    margin-top: 35px;
+    background-color: #2e81f4;
+    color: #eff2f5;
+    font-weight: 800;
+}
+.login > .login__panel> button:hover {
+background-color: white;
+color: #2e81f4;
+}
+
+.login > .login__panel> div > img{
+    object-fit: contain;
+    height: 150px;
+}
+.login > .login__panel> div{
+    display: flex;
+    flex-direction: column;
+}
+.login__panel{
+    background-color: white;
+    padding: 45px;
+    border-radius: 15px;
+}
+.login__panel:hover{
+    background-color: #2e81f4;
+}
