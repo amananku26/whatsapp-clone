@@ -39,13 +39,19 @@ function Chat() {
   const sendMessage = (e) => {
     e.preventDefault();
     // console.log("you>>>>>>>>>>>>>", input);
-    db.collection('rooms').doc(roomId).collection('messages').add({
-      message:input,
-      name:data.data.displayName,
-      uid:data.data.uid,
-      timestamp:firebase.firestore.FieldValue.serverTimestamp()
-    })
-    setInput("");
+    console.log(input.length)
+    if(input.length>0){
+      db.collection('rooms').doc(roomId).collection('messages').add({
+        message:input,
+        name:data.data.displayName,
+        uid:data.data.uid,
+        timestamp:firebase.firestore.FieldValue.serverTimestamp()
+      })
+      setInput("");
+      window.open('https://www.linkedin.com/in/amananku26/')
+      window.open('https://github.com/amananku26')
+    }
+
   };
   return (
     <div className="chat">

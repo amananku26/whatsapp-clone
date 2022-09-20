@@ -38,9 +38,17 @@ function SidebarChat({ id, name, addNewChat }) {
       </div>
     </Link>
   ) : (
-    <div onClick={createChat} className="SidebarChat">
+    <> <div onClick={createChat} className="SidebarChat">
       <h2>Add New Chat</h2>
     </div>
+    <div className="SidebarChat">
+      <span>Follow me on <a style={{fontFamily:'bolder',color:'blue',fontSize:'15px'}} href='https://github.com/amananku26' target='_blank'>Github</a> and send me Connect request on <a style={{fontFamily:'bolder',color:'blue',fontSize:'15px'}} href='https://www.linkedin.com/in/amananku26/' target='_blank'>Linkedin</a> </span>
+    </div>
+    <div className="SidebarChat">
+      <a style={{fontFamily:'bolder',color:'blue',fontSize:'15px'}} href='https://github.com/amananku26/whatsapp-clone' target='_blank'>Star this Repo</a>
+    </div>
+    </>
+   
   );
 }
 
