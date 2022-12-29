@@ -3,7 +3,7 @@
 [Live Web App](https://whatsapp-clone-53d8c.web.app/)
 
 * ###### Features
-  * Users can log in with Google API.
+  * Users can log in with Google API
   * Can Create Groups
   * Can Switch B/w the groups
   * send messages to any groups
